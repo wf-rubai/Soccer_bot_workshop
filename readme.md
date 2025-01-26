@@ -129,3 +129,8 @@ void stopMotors() {
 }
 ```
 
+---
+## Some Special Notes
+### Prompt Writing on ChatGPT
+- Write discriptive prompt.
+- You can see [This chat]() on ChatGPT as an example.
