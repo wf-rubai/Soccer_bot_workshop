@@ -81,7 +81,7 @@ int speedLevel = 0; // Speed (0-255)
 
 void setup() {
   Serial.begin(115200);
-  SerialBT.begin("RC_Car"); // Bluetooth device name
+  SerialBT.begin("soccer_bot_"); // Bluetooth device name
   pinMode(RPWM_L, OUTPUT);
   pinMode(LPWM_L, OUTPUT);
   pinMode(RPWM_R, OUTPUT);
