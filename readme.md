@@ -4,8 +4,8 @@ This repository contains the Arduino code and setup instructions for an RC car u
 
 ## Pin Connections
 
-| **Component**      | **ESP32 Pin** | **BTS7960 Pin** | **Purpose**                |
-|---------------------|---------------|-----------------|----------------------------|
+| **Component**      | **ESP32 Pin** | **BTS7960 Pin** | **Purpose**                 |
+|--------------------|---------------|-----------------|-----------------------------|
 | Left Motor RPWM    | GPIO 25       | RPWM-L          | Control speed and direction |
 | Left Motor LPWM    | GPIO 26       | LPWM-L          | Control speed and direction |
 | Right Motor RPWM   | GPIO 27       | RPWM-R          | Control speed and direction |
