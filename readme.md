@@ -101,14 +101,14 @@ void loop() {
   if (SerialBT.available()) {
     char command = SerialBT.read();
     switch (command) {
-      case 'F': controlMotors(speedLevel, speedLevel, 0, 0); break; // Forward
-      case 'B': controlMotors(0, 0, speedLevel, speedLevel); break; // Backward
+      case 'F': controlMotors(speedLevel, 0, speedLevel, 0); break; // Forward
+      case 'B': controlMotors(0, speedLevel, 0, speedLevel); break; // Backward
       case 'L': controlMotors(0, speedLevel, speedLevel, 0); break; // Left
       case 'R': controlMotors(speedLevel, 0, 0, speedLevel); break; // Right
-      case 'FL': controlMotors(speedLevel / 2, speedLevel, speedLevel, 0); break; // Forward Left
-      case 'FR': controlMotors(speedLevel, speedLevel / 2, 0, speedLevel); break; // Forward Right
-      case 'BL': controlMotors(0, speedLevel / 2, speedLevel, speedLevel); break; // Backward Left
-      case 'BR': controlMotors(0, 0, speedLevel / 2, speedLevel); break; // Backward Right
+      case 'G': controlMotors(speedLevel / 2, 0, speedLevel, 0); break; // Forward Left
+      case 'I': controlMotors(speedLevel, 0, speedLevel / 2, 0); break; // Forward Right
+      case 'H': controlMotors(0, speedLevel / 2, 0, speedLevel); break; // Backward Left
+      case 'J': controlMotors(0, speedLevel, 0, speedLevel / 2); break; // Backward Right
       case '0' ... '9': speedLevel = map(command - '0', 0, 9, 0, 255); break; // Speed control
       case 'S': stopMotors(); break; // Stop
     }
